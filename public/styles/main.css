@@ -1,0 +1,42 @@
+/* 
+COLOR PALETTE
+dark-blue: #262b2e
+accent-orange: #FF9705
+slate-blue: #596E7A
+ice-blue: #DAE4EB
+dark-gray:#2E2B26
+*/
+body {
+    margin: 1em;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #262b2e;
+    text-align: center;
+    background-color: #DAE4EB;
+    font-size: 1em;
+}
+
+label {
+    display: block;
+    padding: 1em;
+}
+
+input {
+    margin-bottom: 2em;
+}
+
+button {
+    margin: 2em;
+    padding: 1em 2em;
+    background-color: #596E7A;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+
+a {
+   color: #FF9705;    
+}
+
+fieldset {
+    border: 0px;
+    padding: 3em;
+}
