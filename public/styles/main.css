@@ -30,6 +30,7 @@ button {
     border: none;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 17.25em;
 }
 
 a {
@@ -57,22 +58,19 @@ input {
     width: 20em;
 }
 
-.left-side {
+.split-screen {
     height: 100%;
     width: 50%;
     position: fixed;
     z-index: 0;
     top: 0;
     background-color: rgba(218, 228, 235, 0.8);
-    left: 0;
+    right: 0;
 }
 
 .logo-img {
-    position: fixed;
     z-index: 1;
-    padding: 3em;
-    max-width: 200px;
-    height: auto;
+    padding: 2em 0 0 3em;
 }
 
 .main {
@@ -85,4 +83,18 @@ input {
 
 .form-element {
     margin: 30px;
+}
+
+@media (max-width: 768px) {
+    
+    .split-screen {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0px;
+    background-color: rgba(218, 228, 235, 0.8);
+    left: 0;
+}
+
 }
