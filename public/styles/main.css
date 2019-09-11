@@ -3,7 +3,7 @@ COLOR PALETTE
 dark-blue: #262b2e
 accent-orange: #FF8B00
 slate-blue: #596E7A
-ice-blue: #DAE4EB
+ice-blue: #EDF8FF
 dark-gray:#2E2B26
 */
 body {
@@ -64,7 +64,7 @@ input {
     position: fixed;
     z-index: 0;
     top: 0;
-    background-color: rgba(218, 228, 235, 0.8);
+    background-color: rgba(237, 248, 255, 0.7);
     right: 0;
 }
 
