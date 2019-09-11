@@ -1,42 +1,88 @@
 /* 
 COLOR PALETTE
 dark-blue: #262b2e
-accent-orange: #FF9705
+accent-orange: #FF8B00
 slate-blue: #596E7A
 ice-blue: #DAE4EB
 dark-gray:#2E2B26
 */
 body {
-    margin: 1em;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #262b2e;
-    text-align: center;
-    background-color: #DAE4EB;
     font-size: 1em;
-}
-
-label {
-    display: block;
-    padding: 1em;
-}
-
-input {
-    margin-bottom: 2em;
+    background-image: url('../images/paxson-woelber-7rjr44Ityqo-unsplash.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: center cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    display: inline-flex;
 }
 
 button {
     margin: 2em;
     padding: 1em 2em;
-    background-color: #596E7A;
+    background-color: #FF8B00;
     color: #FFFFFF;
     font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 a {
-   color: #FF9705;    
+   color: #FF8B00;    
 }
 
 fieldset {
     border: 0px;
+}
+
+label, input {
+    display: block;
+    text-align: left;
+}
+
+label {
+    padding-bottom: 3px;
+}
+
+input {
+    border: none;
+    border-radius: 2px;
+    font-size: 0.8em;
+    padding: 8px 10px;
+    width: 20em;
+}
+
+.left-side {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    background-color: rgba(218, 228, 235, 0.8);
+    left: 0;
+}
+
+.logo-img {
+    position: fixed;
+    z-index: 1;
     padding: 3em;
+    max-width: 200px;
+    height: auto;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.form-element {
+    margin: 30px;
 }

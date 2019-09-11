@@ -3,27 +3,33 @@
 <head>
 	<title>Summit Ice Login</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="logo-img">
-		<img src="images/summit-logo.png">
-	</div>
-	<div class="main">
-		<form class="signup-form" action="/signup" method="post">
-			<fieldset>
-				<h1>Sign Up</h1>
-				<label for="email">Email</label>
-				<input id="email" placeholder="yourname@email.com" type="email" name="email">
-				<label for="password">Password</label>
-				<input placeholder="******" type="password" name="password">
-			</fieldset>
-			<button type="submit">Sign Up</button>
-			<a href="/forgot-password/new"><p>Forgot Password?</p></a>
-		</form>
-	</div>
-	<div class="login-link">
-		<p>Already have an account? <a class="white-link" href="#">Login</a></p>
-	</div>
+    <div class="left-side">
+        <div class="logo-img">
+		     <img src="images/summit-logo.png">
+	    </div>
+            <div class="main">
+                <form class="signup-form" action="/signup" method="post">
+                    <fieldset>
+                        <h1>Create an Account</h1>
+                        <div class="form-element">
+                            <label for="email">Email</label>
+                            <input id="email" placeholder="yourname@email.com" type="email" name="email">
+                        </div> 
+                        <div class="form-element">
+                            <label for="password">Password</label>
+                            <input placeholder="******" type="password" name="password">
+                            <a href="/forgot-password/new"><p>Forgot Password?</p></a>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="login-link">
+                    <p>Already have an account? <a class="white-link" href="#">Login</a></p>
+                </div>
+            </div>
+        </div>      
 </body>
 </html>
