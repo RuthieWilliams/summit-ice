@@ -12,12 +12,12 @@
 	    </div>
     <div class="split-screen">
         <div class="main">
-                <form class="signup-form" name="signupForm" action="/signup" onsubmit="validateForm()" method="post">
+                <form class="signup-form" name="signupForm" action="/signup" onsubmit="return (validateForm());" method="post">
                     <fieldset>
                         <h1>Log In to Your Account</h1>
                         <div class="form-element">
                             <label for="email">Email</label>
-                            <input id="email" placeholder="yourname@email.com" type="email" name="email" required>
+                            <input id="email" placeholder="yourname@email.com" type="email" name="email">
                         </div> 
                         <div class="form-element">
                             <label for="password">Password</label>
@@ -25,10 +25,10 @@
                             <a href="/forgot-password/new"><p>Forgot Password?</p></a>
                         </div>
                     </fieldset>
-                    <button type="submit">Login</button>
+                    <button type="submit" value="submit">Login</button>
                 </form>
                 <div class="login-link">
-                    <p>Don't have an account? <a class="white-link" href="/index.html">Sign Up</a></p>
+                    <p>Don't have an account yet? <a class="white-link" href="index.html">Sign Up</a></p>
                 </div>
             </div>
         </div>      
